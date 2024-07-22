@@ -2,7 +2,8 @@ import { useAtom } from 'jotai'
 import { discountAtom } from './useAtom'
 
 export const Test = () => {
-  const [price,discountPrice] = useAtom(discountAtom)
+  const [price, discountPrice] = useAtom(discountAtom)
+
   return (
     <div>
       <div>{price}円</div>

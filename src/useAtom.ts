@@ -8,3 +8,10 @@ export const discountAtom = atom(
     set(priceAtom,get(priceAtom) - discount)
   },
 )
+
+export const addAtom = atom(
+  (get) => get(priceAtom),
+  (get, set, add:number) => {
+    set(priceAtom,get(priceAtom) + add)
+  },
+)
